@@ -1,0 +1,21 @@
+.ResultsContainer {
+	display: flex;
+	margin-left: 2%;
+	margin-bottom: 2%; 
+}
+
+.Image {
+	display: flex;
+	flex-direction: column;
+	transition: transform .001s;
+	border-style: solid;
+	border-width: thin;
+	border-color: grey;
+}
+
+.Image:hover {
+	transform: scale(1.1);
+	border-style: solid; 
+	border-width: medium;
+	border-color: grey;
+}

@@ -1,0 +1,11 @@
+.Stars {
+	display: flex;
+	align-items: center;
+	padding-bottom: 2%;
+}
+
+.Count {
+	 margin-left: 2%; 
+	 color: #3333ff;
+	 font-size: 15px;
+}
