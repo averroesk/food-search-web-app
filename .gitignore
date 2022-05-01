@@ -1,2 +1,2 @@
-.ve
-node_modules
+.vercel
+/node_modules
