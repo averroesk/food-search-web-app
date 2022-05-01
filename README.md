@@ -9,5 +9,5 @@
 * #### Déploiement en serveur de production sur Vercel
 
 #### En cours d'implémentation:
-* #### React Routeur
+* #### React Router
 * #### Google Map
