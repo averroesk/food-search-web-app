@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# api key
-api_key.js
+# yelp fusion api key
+yelpFusionApiKey.js
