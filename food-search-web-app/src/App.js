@@ -10,7 +10,7 @@ function App() {
   const [mealName, setMealName, cityName, setCityName, data, getResponse] = useResults();
 
   const filterRestaurantsByPrice = (p) => {
-		if (data.length > 0) return data.filter(restaurant => restaurant.price === p);
+		return data.filter(restaurant => restaurant.price === p);
 	}
 
   console.log('data:', data);
@@ -26,16 +26,12 @@ function App() {
           handleOnClick={getResponse}
         />
 
-        { data.length > 0 
-          ?	(<p style={{ display: 'flex', justifyContent: 'center', marginLeft: '2%', fontSize: '16px' }}>
-              {data.length} résulats
-            </p>)
-          : null
-        }
-
-        <ShowRestaurants restaurants={filterRestaurantsByPrice('€')} textPrice='Pas cher' />
-        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€')} textPrice='Moyennement cher' />
-        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Cher' />
+        
+              <ShowRestaurants restaurants={filterRestaurantsByPrice('€')} textPrice='Pas cher' />
+              <ShowRestaurants restaurants={filterRestaurantsByPrice('€€')} textPrice='Moyennement cher' />
+              <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Cher' />
+            
+           
                   
       </div>
       

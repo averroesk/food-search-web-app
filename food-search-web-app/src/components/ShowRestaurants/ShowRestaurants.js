@@ -8,9 +8,12 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 		
 			<>
 				{ 
-					restaurants !== undefined ?
+					restaurants.length ?
 					<>
 						<p style={{ marginLeft: '2%', fontSize: 'large' }}>{textPrice}</p> 
+						<p style={{ marginLeft: '2%', fontSize: '17px' }}>
+                			{restaurants.length} résulats
+            			</p>
 						<div className='ResultsContainer'>
 							{ 	restaurants.map((restaurant) => (
 									<div className="Image" key={restaurant.id} style={{ marginRight: '2%' }}>

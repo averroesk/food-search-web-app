@@ -21,7 +21,7 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 					<InputGroup>
 					<FormControl
 						autoFocus
-						placeholder="Que souhaitez-vous manger? (ex: Tarte aux pommes)" 
+						placeholder="Que souhaitez-vous manger? (ex: Tarte aux fraises)" 
 						value={mealName}
 						onChange={(event) => setMealName(event.target.value)}
 						onKeyPress={enterPressed}
@@ -41,11 +41,10 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 						variant="outline-primary"
 						onClick={handleOnClick}
 					>
-						Rechercher
+						GO
 					</Button> 
 					</InputGroup>
 					<br/><br/>
-					
 					
 			</div>
 		</>
