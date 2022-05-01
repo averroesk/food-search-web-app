@@ -18,6 +18,7 @@ function App() {
   return (
 
     <div>
+
         <SearchInput
           mealName={mealName}
           setMealName={setMealName}
@@ -26,13 +27,10 @@ function App() {
           handleOnClick={getResponse}
         />
 
-        
-              <ShowRestaurants restaurants={filterRestaurantsByPrice('€')} textPrice='Pas cher' />
-              <ShowRestaurants restaurants={filterRestaurantsByPrice('€€')} textPrice='Moyennement cher' />
-              <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Cher' />
-            
-           
-                  
+        <ShowRestaurants restaurants={filterRestaurantsByPrice('€')} textPrice='Pas cher' />
+        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€')} textPrice='Moyennement cher' />
+        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Cher' />
+                      
       </div>
       
   );
