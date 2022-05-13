@@ -39,16 +39,16 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 	  
 		return (
 		  <ToggleButtonGroup type="checkbox" value={value} onChange={handleChange}>
-			<ToggleButton variant="outline-primary" id="tbg-btn-1" value={1}>
+			<ToggleButton variant="outline-light" id="tbg-btn-1" value={1}>
 				Restaurants
 			</ToggleButton>
-			<ToggleButton variant="outline-primary" id="tbg-btn-2" value={2}>
+			<ToggleButton variant="outline-light" id="tbg-btn-2" value={2}>
 				Cafés
 			</ToggleButton>
-			<ToggleButton variant="outline-primary" id="tbg-btn-3" value={3}>
+			<ToggleButton variant="outline-light" id="tbg-btn-3" value={3}>
 				Salons de thé
 			</ToggleButton>
-			<ToggleButton variant="outline-primary" id="tbg-btn-4" value={4}>
+			<ToggleButton variant="outline-light" id="tbg-btn-4" value={4}>
 			Boulangeries
 			</ToggleButton>
 		  </ToggleButtonGroup>
@@ -68,6 +68,7 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 							value={mealName}
 							onChange={(event) => setMealName(event.target.value)}
 							onKeyPress={enterPressed}
+							type="search"
 						/>
 						
 						{/* <label htmlFor="city"></label> */}
@@ -76,11 +77,12 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 							value={cityName}
 							onChange={(event) => setCityName(event.target.value)}
 							onKeyPress={handleOnClick}
+							type="search"
 						/>
 						
 						<Button
 							className='Submit'
-							variant="outline-primary"
+							variant="outline-light"
 							onClick={handleOnClick}
 						>
 							GO

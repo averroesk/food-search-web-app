@@ -10,8 +10,8 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 				{ 
 					restaurants.length ?
 					<>
-						<p style={{ marginLeft: '2%', fontSize: 'large' }}>{textPrice}</p> 
-						<p style={{ marginLeft: '2%', fontSize: '17px' }}>
+						<p style={{ marginLeft: '2%', fontSize: 'large', color: 'white' }}>{textPrice}</p> 
+						<p style={{ marginLeft: '2%', fontSize: '17px', color: 'white' }}>
                 			{restaurants.length} résulats
             			</p>
 						<div className='ResultsContainer'>

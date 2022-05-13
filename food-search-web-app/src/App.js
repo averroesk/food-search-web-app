@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchInput from './components/SearchInput/SearchInput.js';
 import ShowRestaurants from './components/ShowRestaurants/ShowRestaurants.js';
