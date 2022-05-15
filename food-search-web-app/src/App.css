@@ -13,3 +13,12 @@ body {
   );
   text-align: center;
 }
+
+.app-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 80px;
+  color: #0ccac4;
+  font-family: 'Dancing Script';
+}

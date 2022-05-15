@@ -15,7 +15,7 @@
   	border: 1px solid grey;
   	border-radius: 5px;
   	/* padding: 25px; */
-	padding: 5px;
+	/* padding: 5px; */
   	cursor: pointer;
   	-moz-osx-font-smoothing: grayscale;
   	backface-visibility: hidden;
@@ -26,6 +26,11 @@
 .Image:hover {
 	transform: scale(1.1);
 	border-style: solid; 
-	border-width: medium;
+	border-width: thick;
 	border-color: grey;
 }
+
+div.Image p:hover {
+	color: red;
+}
+

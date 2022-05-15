@@ -18,7 +18,7 @@ function App() {
   return (
 
     <div>
-
+        <h1 className='app-title'>Food Search Web App</h1>
         <SearchInput
           mealName={mealName}
           setMealName={setMealName}
