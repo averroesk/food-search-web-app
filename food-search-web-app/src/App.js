@@ -29,7 +29,7 @@ function App() {
 
         <ShowRestaurants restaurants={filterRestaurantsByPrice('€')} textPrice='Pas cher' />
         <ShowRestaurants restaurants={filterRestaurantsByPrice('€€')} textPrice='Moyennement cher' />
-        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Cher' />
+        <ShowRestaurants restaurants={filterRestaurantsByPrice('€€€')} textPrice='Plutôt cher' />
                       
       </div>
       

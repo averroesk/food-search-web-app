@@ -14,11 +14,21 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 				{ 
 					restaurants.length ?
 					<>
-						<p style={{ marginLeft: '2%', fontSize: 'large', color: 'white' }}>{textPrice}</p> 
-						<p style={{ marginLeft: '2%', fontSize: '17px', color: 'white' }}>
+						<p style={{ 
+									marginLeft: '2%', 
+									fontSize: '25px', 
+									/* color: 'white', */
+									color: '#cffcfb',
+									fontFamily: 'Dancing Script',
+									marginBottom: '2%'
+								}}
+							>
+							{`${textPrice} - ${restaurants.length} résultats:`}
+						</p> 
+						{/* <p style={{ marginLeft: '2%', fontSize: '20px', color: 'white', fontFamily: 'Dancing Script' }}>
                 			{restaurants.length} résulats
-            			</p>
-						<div className='ResultsContainer'>
+            			</p> */}
+						<div className='card-list'>
 						{/* <ScrollMenu
 							LeftArrow={LeftArrow}
 							RightArrow={RightArrow}
@@ -26,7 +36,7 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 						> */}
 									{ 	
 										restaurants.map((restaurant) => (
-											<div className="Image" key={restaurant.id} style={{ marginRight: '2%' }} itemId={restaurant.id}>
+											<div className="card-container" key={restaurant.id} style={{ marginRight: '2%' }} itemId={restaurant.id}>
 												<img src={restaurant.image_url} alt={restaurant.name} width='350' height='250' /> 
 												<p className='restaurant-name'>{ restaurant.name }</p>
 												<Rating rating={restaurant.rating} reviewCount={restaurant.review_count} />
