@@ -1,7 +1,15 @@
 .ResultsContainer {
+	width: 95vw;
+	margin: 0 auto; 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	margin-bottom: 50px;
+	/*
 	display: flex;
 	margin-left: 2%;
-	margin-bottom: 4%;
+	margin-bottom: 4%; 
+	*/
 }
 
 .Image {
@@ -15,13 +23,17 @@
   	border: 1px solid grey;
   	border-radius: 5px;
   	/* padding: 25px; */
-	  padding: 20px;
+	padding: 20px; 
 	/* padding: 5px; */
   	cursor: pointer;
   	-moz-osx-font-smoothing: grayscale;
   	backface-visibility: hidden;
   	transform: translateZ(0);
   	transition: transform 0.25s ease-out;
+	
+		
+	
+
 }
 
 .Image:hover {
