@@ -61,7 +61,7 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 			<div className='SearchInput'>
 					{/* <label htmlFor="meal"></label> */}
 					<ToggleButtonGroupControlled />
-					<InputGroup style={{ marginTop: '2%' }}>
+					<InputGroup style={{ margin: '2% auto' }}>
 						<FormControl
 							autoFocus
 							placeholder="Que souhaitez-vous manger? (ex: Tarte aux fraises)" 

@@ -3,11 +3,32 @@ import './ShowRestaurants.css';
 import Rating from '../Rating/Rating.js';
 import { LeftArrow, RightArrow } from "./arrows";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
+import { CashStack } from 'react-bootstrap-icons';
 
 const ShowRestaurants = ({ textPrice, restaurants }) => {
 	console.log('restaurants:', restaurants);
-
 	
+	let cashStack  = null;
+	
+	if (textPrice === "Pas cher") {
+		cashStack = <CashStack size={40} style={{ marginRight: '1%' }} />;
+	} else if (textPrice === "Moyennement cher") {
+		cashStack = (
+			<>
+				<CashStack size={40} style={{ marginRight: '1%' }} />
+				<CashStack size={40} style={{ marginRight: '1%' }} />
+			</>
+		);
+	} else if (cashStack = "Plûtot cher") {
+		cashStack = (
+			<>
+				<CashStack size={40} style={{ marginRight: '1%' }} />
+				<CashStack size={40} style={{ marginRight: '1%' }} />
+				<CashStack size={40} style={{ marginRight: '1%' }} />
+			</>
+		);
+	}
+
 	return (
 		
 			<>
@@ -15,15 +36,19 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 					restaurants.length ?
 					<>
 						<p style={{ 
+									display: 'flex',
 									marginLeft: '6%', 
 									fontSize: '25px', 
 									/* color: 'white', */
 									color: '#cffcfb',
 									fontFamily: 'Dancing Script',
-									marginBottom: '2%',
+									marginBottom: '3%',
+									justifyContent: 'center',
+									alignItems: 'center',
 								}}
-							>
-							{`${textPrice} - ${restaurants.length} résultats:`}
+						>
+							{ cashStack }
+							{`${textPrice} - ${restaurants.length} résultats:`} 
 						</p> 
 						{/* <p style={{ marginLeft: '2%', fontSize: '20px', color: 'white', fontFamily: 'Dancing Script' }}>
                 			{restaurants.length} résulats
