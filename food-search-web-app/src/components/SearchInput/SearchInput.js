@@ -85,7 +85,7 @@ const SearchInput = ({ mealName, setMealName, cityName, setCityName, handleOnCli
 							variant="outline-light"
 							onClick={handleOnClick}
 						>
-							GO
+							<span style={{ fontWeight: 'bold' }} >GO</span>
 						</Button> 
 					</InputGroup>
 					<br/><br/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShowRestaurants.css';
 import Rating from '../Rating/Rating.js';
-import { LeftArrow, RightArrow } from "./arrows";
+import { LeftArrow, RightArrow } from "./Arrows";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { CashStack } from 'react-bootstrap-icons';
 
@@ -19,7 +19,7 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 				<CashStack size={40} style={{ marginRight: '1%' }} />
 			</>
 		);
-	} else if (cashStack = "Plûtot cher") {
+	} else  {
 		cashStack = (
 			<>
 				<CashStack size={40} style={{ marginRight: '1%' }} />
@@ -38,9 +38,12 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 						<p style={{ 
 									display: 'flex',
 									marginLeft: '6%', 
-									fontSize: '25px', 
+									/* fontSize: '25px', */
+									fontSize: '28px',
+									fontWeight: 'bold',
 									/* color: 'white', */
-									color: '#cffcfb',
+									color: '#cffcfb', 
+									/* color: '#087876', */
 									fontFamily: 'Dancing Script',
 									marginBottom: '3%',
 									justifyContent: 'center',
