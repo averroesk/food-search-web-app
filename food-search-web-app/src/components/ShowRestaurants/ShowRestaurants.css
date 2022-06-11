@@ -1,39 +1,31 @@
 .card-list {
-	width: 95vw;
+	/*width: 95vw;
 	margin: 0 auto; 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 50px;
+	grid-gap: 50px;*/
 	margin-bottom: 50px;
-	/*
-	display: flex;
-	margin-left: 2%;
-	margin-bottom: 4%; 
-	*/
-}
+} 
 
 .card-container {
+	
 	display: flex;
 	flex-direction: column;
-	/* transition: transform .001s; */
-	/* border-style: solid;
-	border-width: thin;
-	border-color: grey; */
 	background-color: #95dada;
   	border: 1px solid grey;
   	border-radius: 5px;
-  	/* padding: 25px; */
 	padding: 20px; 
-	/* padding: 5px; */
   	cursor: pointer;
   	-moz-osx-font-smoothing: grayscale;
   	backface-visibility: hidden;
   	transform: translateZ(0);
   	transition: transform 0.25s ease-out;
 	
-		
-	
-
+	/* border: "1px solid";
+	display: "inline-block";
+	margin: "0 10px";
+	width: "160px";
+	userSelect: "none"; */
 }
 
 .card-container:hover {

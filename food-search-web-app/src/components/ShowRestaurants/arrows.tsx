@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
@@ -12,7 +13,7 @@ function Arrow({
   onClick: VoidFunction;
 }) {
   return (
-    <button
+    <Button variant="outline-primary"
       disabled={disabled}
       onClick={onClick}
       style={{
@@ -20,14 +21,14 @@ function Arrow({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        right: "1%",
-        opacity: disabled ? "0" : "1",
+        margin: "5% 1%",
         userSelect: "none",
-		backgroundColor: red
+		backgroundColor: '#95dada',
+		borderRadius: '40%',
       }}
     >
       {children}
-    </button>
+    </Button>
   );
 }
 
@@ -51,7 +52,7 @@ export function LeftArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollPrev()}>
-      Left
+		{'<'}
     </Arrow>
   );
 }
@@ -75,7 +76,7 @@ export function RightArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollNext()}>
-      Right
+      {'>'}
     </Arrow>
   );
 }
