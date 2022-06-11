@@ -11,6 +11,7 @@
     "nth-check": "^2.0.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.3.1",
+    "react-bootstrap-icons": "^1.8.2",
     "react-dom": "^18.1.0",
     "react-horizontal-scrolling-menu": "^2.8.2",
     "react-scripts": "5.0.1",

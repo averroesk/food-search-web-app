@@ -1,5 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import { CaretLeftFill, CaretRightFill } from 'react-bootstrap-icons';
 
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
@@ -52,7 +53,7 @@ export function LeftArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollPrev()}>
-		{'<'}
+		<CaretLeftFill size={30} />
     </Arrow>
   );
 }
@@ -76,7 +77,7 @@ export function RightArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollNext()}>
-      {'>'}
+		<CaretRightFill size={30} />
     </Arrow>
   );
 }

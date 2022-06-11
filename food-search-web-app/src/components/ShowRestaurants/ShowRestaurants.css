@@ -18,8 +18,8 @@
   	cursor: pointer;
   	-moz-osx-font-smoothing: grayscale;
   	backface-visibility: hidden;
-  	transform: translateZ(0);
-  	transition: transform 0.25s ease-out;
+  	transform: translateZ(0); 
+  	transition: transform 0.25s ease-out; 
 	
 	/* border: "1px solid";
 	display: "inline-block";
@@ -29,10 +29,8 @@
 }
 
 .card-container:hover {
-	transform: scale(1.1);
+	transform: scale(1.05); 
 	border-style: solid; 
-	color: red;
-
 }
 
 .restaurant-name {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShowRestaurants.css';
 import Rating from '../Rating/Rating.js';
-import { LeftArrow, RightArrow } from "./arrows.tsx";
+import { LeftArrow, RightArrow } from "./arrows";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 
 const ShowRestaurants = ({ textPrice, restaurants }) => {
@@ -15,7 +15,7 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 					restaurants.length ?
 					<>
 						<p style={{ 
-									marginLeft: '2%', 
+									marginLeft: '6%', 
 									fontSize: '25px', 
 									/* color: 'white', */
 									color: '#cffcfb',
