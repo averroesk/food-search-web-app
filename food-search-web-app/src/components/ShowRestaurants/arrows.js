@@ -22,7 +22,7 @@ function Arrow({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        margin: "5% 1%",
+        margin: "10% 1%",
         userSelect: "none",
 		backgroundColor: '#95dada',
 		borderRadius: '40%',
