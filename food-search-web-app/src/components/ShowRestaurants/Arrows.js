@@ -24,7 +24,7 @@ function Arrow({
         justifyContent: "center",
         margin: "10% 1%",
         userSelect: "none",
-		backgroundColor: '#95dada',
+		backgroundColor: '#95dada', 
 		borderRadius: '40%',
       }}
     >
