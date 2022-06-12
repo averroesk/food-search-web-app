@@ -11,8 +11,15 @@ body {
     rgba(7, 27, 82, 1) 0%,
     rgba(0, 128, 128, 1) 100%
   ); */
-  background-image: url("./images/wood-background-5.jpg");
-  background-size: 100%;
+  /* background-image: url("./images/wood-background-5.jpg");
+  background-size: 100%; */
+    
+  /* background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,42,107,1) 35%, rgba(0,212,255,1) 100%); */
+  /* background: rgb(221,101,74);
+  background: linear-gradient(90deg, rgba(221,101,74,1) 0%, rgba(214,137,89,1) 35%, rgba(232,202,173,1) 100%); */
+  background: rgb(238,200,183);
+background: linear-gradient(0deg, rgba(238,200,183,1) 0%, rgba(240,144,97,1) 100%);
   text-align: center;
 }
 
