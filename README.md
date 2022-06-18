@@ -1,6 +1,6 @@
 ##
 #### Stack: React  |  React-Bootstrap  |  JavaScript  |  HTML5  |  CSS3 
-#### Application web de recherche de retaurants, cafés, salons de thé, boulangeries. 
+#### Application web de recherche de restaurants. 
 #### Utilisation: entrez les renseignements demandés puis cliquez sur "GO".
 * #### Utilisation de l'API REST Yelp Fusion
 * #### Utlisation d'un serveur proxy pour éviter les problèmes de CORS ('Cross-Origin Resource Sharing')
