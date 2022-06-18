@@ -23,11 +23,34 @@ body {
   text-align: center;
 }
 
+header {
+	display: flex;
+	/* background-color: green; */
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 1%;
+}
+
 .app-title {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 80px;
-  color: #0ccac4;
-  font-family: 'Dancing Script';
+	/* text-align: center; */
+	/* margin-top: 40px; */
+	/* margin-bottom: 40px; */
+	margin-bottom: 2%;
+	/* font-size: 80px; */
+	font-size: 70px;
+	color: #0ccac4;
+	font-family: 'Dancing Script';
+	margin-left: 20%;
+}
+
+.logo {
+	margin-left: 20px;
+	width: 40px;
+	/* height: 45px; */
+	cursor: pointer;
+}
+
+.logo:hover{
+	opacity: 0.5;
 }

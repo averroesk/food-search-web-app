@@ -42,9 +42,8 @@ const ShowRestaurants = ({ textPrice, restaurants }) => {
 									fontSize: '28px',
 									fontWeight: 'bold',
 									/* color: 'white', */
-									/* color: '#cffcfb', */
-									color: '#9ff9f7',
-									/* color: '#087876', */
+									color: '#cffcfb', 
+									/* color: '#9ff9f7', */ 
 									fontFamily: 'Dancing Script',
 									marginBottom: '3%',
 									justifyContent: 'center',

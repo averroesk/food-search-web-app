@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchInput from './components/SearchInput/SearchInput.js';
 import ShowRestaurants from './components/ShowRestaurants/ShowRestaurants.js';
 import useResults from "./hooks/useResults";
+import GitHubLogo from './images/GitHub-Mark-Light-64px.png';
 
 function App() {
 
@@ -18,7 +19,12 @@ function App() {
   return (
 
     <div>
-        <h1 className='app-title'>Food Search Web App</h1>
+		<header>
+			<a href="https://github.com/averroesk/food-search-web-app-repository" target="_blank" rel="noreferrer">
+				<img className='logo' src={GitHubLogo} alt="GitHub Logo" />
+			</a>
+			<h1 className='app-title'>Food Search Web App</h1>
+		</header>
         <SearchInput
           mealName={mealName}
           setMealName={setMealName}
