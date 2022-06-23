@@ -1,8 +1,16 @@
 ##
-#### Stack: React  |  React-Bootstrap  |  JavaScript  |  HTML5  |  CSS3 
+#### Stack: React  |  React-Bootstrap  |  JavaScript  |  HTML5  |  CSS3 | Vercel | Git 
 #### Application web de recherche de restaurants. 
 #### Mode d'emploi: entrez les renseignements demandés puis cliquez sur "GO".
-* #### Utilisation de l'API REST Yelp Fusion
-* #### Utlisation d'un serveur proxy pour éviter les problèmes de CORS ('Cross-Origin Resource Sharing')
-* #### Déploiement en serveur de production sur Vercel
+
+#### Réalisations:
+
+* #### Utilisation d’API REST telle que Yelp Fusion et récupération des données en utilisant la librairie Axios.
+* #### Développement de l’interface utilisateur en ReactJS en utilisant React Hooks et en partageant les données avec React Context.
+* #### Amélioration de l’interface utilisateur  avec React-Bootstrap et CSS3.
+* #### Utilisation d’un serveur proxy pour éviter les problèmes de Cross-Origin Resource Sharing (CORS) lors de la mise en production.
+* #### Utilisation de composants React disponibles en tant que modules npm.
+* #### Intégration continue sur plateforme cloud.
+* #### Veille sur les évolutions technologiques.
+
 
